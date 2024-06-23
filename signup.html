@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up page</title>
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body>
+    <nav>
+   
+        <a href="/"><h4 class="brandname">vastra</h4> </a>
+     
+         <div class="country">
+           <img src="/location.png" height=30rem class="location-icon" alt="">
+           <div>
+             <p1>Deliver to </p1>
+             <h1>India</h1>
+     
+           </div>
+         </div>
+       
+        <div class="menu">
+         <ul>
+           <li><a href="">Men</a></li>
+           <li><a href="">Women</a></li>
+           <li><a href="">Kids</a></li>
+           <li><a href="">Traditional </a></li>
+           <li><a href="">Accessories</a></li>
+         </ul>
+        </div>
+     
+        <div class="search">
+          <div class="dropdown-category">
+           <p>All</p>
+           <img src="/dropdown_icon.png" height="11rem" alt="">
+          </div> 
+          <input type="text" class="searchbar" placeholder="search vastra">
+          <img src="/search_icon.png" class="search-icon" alt="">
+           
+        </div>
+        <div class="account-detail">
+         
+         <a href="login.html"><h1>Log in/<br>sign up</h1></a>
+         <img src="/dropdown_icon.png" height="20rem" alt="">
+         
+        </div>
+     
+        <a href="">
+         <img src="/cart.png" class="cartlogo" alt="">
+        </a> 
+       </nav>  
+
+    <div class="registration-container">
+        <h2>Create an Account</h2>
+        <form action="/submit_registration" method="POST">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">sign up</button>
+        </form>
+    </div>
+
+</body>
+</html>
