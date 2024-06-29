@@ -145,6 +145,30 @@ nav{
   
 
 }
+.openbtn{
+  
+  border: none;
+  border-radius:0%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  right: 0;
+  background-color:#D20062;
+  top:0px;
+  width: 10%;
+  margin: 0px;
+  font-size: 30px
+
+}
+
+.openbtn{
+  display: none;
+
+}
+.closebtn{
+  display: none;
+}
 
 .header-slider ul{
   padding: 0;
@@ -153,7 +177,7 @@ nav{
   
 }
 .header-slider img{
-  max-width: 100%;
+  width: 100%;
 
 }
 .header-slider a{
@@ -177,7 +201,7 @@ nav{
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 0.8rem 0rem;
+  margin: 1rem 0.5rem;
   gap: 0.5rem;
   
   overflow-y: hidden
@@ -190,27 +214,13 @@ nav{
   
  
 }
-.detail h2{
-  white-space: nowrap;
-  position: absolute;
-  font-size: 4.0rem;
-  color: azure;
-  padding: 10.0rem 0rem 0rem 5.0rem;
-  
-}
-.detail h4{
-  white-space: nowrap;
-  position: absolute;
-  
-  font-size: 2.0rem;
-  color: azure;
-  padding: 16.0rem 0rem 0rem 5.0rem;
-}
+
 .detail img{
-  max-width: max-content;
-  height: 68.5vh;
+  max-width: 100%;
+  border-radius: 3rem;
+  
 }
-.button{
+.detail .button{
   display: flex;
   position: absolute;
   justify-content: center;
@@ -226,8 +236,9 @@ nav{
   cursor: pointer;
   transform: 0.3s ease;
 }
-.button:hover{
-  color:white
+.detail .button:hover{
+  color:white;
+  background-color: #D20062;
 }
 #headline{
   text-align: center;
@@ -324,12 +335,27 @@ nav{
  margin-bottom: 6.0rem;
 }
 .banner2 .button{
-  margin-left: 60rem;
-  margin-bottom: 16.0rem;
+
+  right: 20rem;
+  bottom: -85rem;
   background-color: black;
   color: white;
   transition: 0.3s ease;
   font-size: 1.5rem;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 11.0rem;
+  height: 3.0rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+ 
+  border: none;
+  border-radius: 5.0rem;
+
+  cursor: pointer;
+  transition: 0.2 ease;
 }
 .banner2 .button:hover{
   color: #D20062;
@@ -393,7 +419,23 @@ nav{
   font-size: 1.5rem;
 }
 
+
 .desc .button{
+  
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 11.0rem;
+  height: 3.0rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 22rem 8rem;
+  border: none;
+  border-radius: 5.0rem;
+  background-color: white;
+  cursor: pointer;
+  
   left: 0;
   margin-left: 2.5rem;
   margin-top: 35rem;
@@ -512,16 +554,16 @@ footer .copyright{
  
 
 }
-.box .button{
+.box .loginbutton{
   margin-top: 2.0rem;
   margin-left: 3.0rem;
 }
-.box .button:hover{
+.box .loginbutton:hover{
   background-color: blue;
   color: black;
 
 }
-button{
+.loginbutton{
 
   width: 11.0rem;
   height: 3rem;
@@ -535,8 +577,22 @@ button{
   cursor: pointer;
   transform: 0.3s ease;
 }
+.signbutton{
 
-button:hover{
+  width: 11.0rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 2.0rem;
+  margin-left: 3.0rem;
+  border: none;
+  border-radius: 2.0rem;
+  background-color: white;
+  cursor: pointer;
+  transform: 0.3s ease;
+}
+
+.signbutton:hover {
   background-color:#da4c8e;
   color: black;
 }
@@ -690,60 +746,201 @@ input[type=checkbox]{
   border: 2px solid #D20062;
 
 }
-@media only screen and (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: stretch;
+
+
+
+@media only screen and (max-width: 1277px) {
+  nav{
+    padding: 0rem 2rem;
   }
 
-  .country, .search, .account-detail, .menu {
+  .openbtn{
+    display: block;
+    padding: 2rem;
+  }
+  .country, .search, .account-detail {
     width: 100%;
     justify-content: center;
     text-align: center;
+    padding: 0 2rem 0 2rem;
   }
 
+ 
+  .account-detail{
+    white-space: nowrap;
+  }
+  .dropdown-category{
+     margin-right: 7rem;
+     margin-left: 0rem;
+  }
+ .search-icon{
+
+  width: 2.9rem;
+  margin: 0 0rem 0 0;
+ 
+ }
+
+  .banners img{
+    
+    width:100%;
+ }
+
+  .detail .button{
+    justify-content: center;
+    align-items: center;
+    width: 11.0rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 22rem 6rem;
+    border: none;
+    border-radius: 5.0rem;
+    background-color: white;
+    cursor: pointer;
+    transform: 0.3s ease;
+  }
+
+
+
+
+  .menu ul li{
+    margin: 3rem;
+    line-height: 2rem;
+  }  
+  .menu  {
+    width: 0%;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 1;
+  
+    top: 3.5rem;
+    right: 0;
+    background-color: #D20062;
+    overflow-x: hidden;
+    transition: 0.5s;
+  
+    justify-content: center;
+    text-align: center
+  }
+  
   .menu ul {
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1rem;
+    padding: 0px 0px 0px 0px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .menu ul:hover {
+    color: #f1f1f1;
+  }
+  
+  .menu .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .openbtn{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 40px 0px 20px;
+    
+  }
+  .closebtn{
+    display: block;
+  }
+  .banner2 .button{
+
+    right:  13rem;
+    bottom: -83rem;
+    
+
+
   }
 
-  .search {
-    max-width: none;
-  }
-
-  .cartlogo {
-    margin: 0 auto;
-  }
+  
 }
 
-@media only screen and (max-width: 1277px) {
-  .brandname {
-    font-size: 2rem;
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) { 
+  nav{
+    padding: 0.5rem 2rem;
   }
 
-  .country h1 {
-    font-size: 1.2rem;
-  }
+.country{
+  display: none;
+}
+.detail .button{
+  font-size: 1rem;
+  margin: 15rem 4rem;
+  width: 7rem;
+  white-space: nowrap;
+}
+.searchbar{
+  width: 100%;
+}
+.search{
+  margin-left: 5rem;
+  width: 38%;
+} 
+.dropdown-category{
+  margin-right: 16rem;
+}
+.search-icon{
+  width: 3rem;
+  margin: 0 0rem 0 0; 
+}
+.banner2 .button{
 
-  .menu ul {
-    font-size: 0.9rem;
+  right:  13rem;
+  bottom: -107rem;
+  
+}
+}
+@media only screen and (max-width: 768px){
+  nav{
+    padding: 0.5rem 2rem;
   }
+  .detail .button{
+    font-size: 0.5rem;
+    margin: 11rem 3rem;
+    width: 4rem;
+    height: 1.5rem;
+    white-space: nowrap;
+  }
+  .search{
+    width: 30%;
+    margin-left: 2rem;
+  }
+  .dropdown-category {
+    margin-left:4rem;
+    margin-right: 5rem;
+  }
+  .search-icon{
+    width: 3rem;
+    margin: 0 4rem 0 0; 
+  }
+  .menu  {
+   top: 4.5rem;
+  }
+  .banner2 .button{
 
-  .searchbar {
-    width: auto;
-  }
+    right:  6rem;
+    bottom: -223rem;
+    width: 9rem;
+    
 
-  .account-detail h1 {
-    font-size: 1rem;
-  }
 
-  .search-icon {
-    padding: 0 0.5rem;
-  }
 
-  .cartlogo {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
+}
 }
